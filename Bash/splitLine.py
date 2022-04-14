@@ -1,6 +1,6 @@
 """
 
-the Split class is using for separate each elements in command
+the Split class is using for separate each elements in Script
 
 Exemple:
     > commit -m "fist commit"
@@ -37,7 +37,7 @@ class Split:
 
         return self.separate_command(elements)
 
-    # separate each command if there are keyword '&&', 'and', '/+/'
+    # separate each Script if there are keyword '&&', 'and', '/+/'
     def separate_command(self, line):
         allCommand = []
         eachElement = []
