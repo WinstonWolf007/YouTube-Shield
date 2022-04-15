@@ -14,6 +14,17 @@ the program put an error:
         IndexError: list index out of range
 """
 
-@command.add(name='pluginX64', param_dash=True, v=str)
-def open_application():
-    print('Version: 20.00.4')
+
+@command.add(only_one_value=str)
+def mkdir(val):
+    print(val)
+
+
+@command.add(bits=int, app=str)
+def file(val):
+    print(val)
+
+
+@command.add(only_one_param='v')
+def node():
+    print('V17.9.0')
