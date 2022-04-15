@@ -17,7 +17,7 @@ the program put an error:
 
 @command.add(only_one_value=str)
 def mkdir(val):
-    print(val)
+    print('create file:', val)
 
 
 @command.add(bits=int, app=str)
