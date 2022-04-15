@@ -15,7 +15,10 @@ def run():
                     param[el] = x[1:][y+1]
 
             if param:
-                command.all_command_dict.get(x[0])['code'](param)
+                param2 = {}
+                for y in param:
+                    param2[y.replace('-', '')] = param[y]
+                command.all_command_dict.get(x[0])['code'](param2)
             else:
                 command.all_command_dict.get(x[0])['code']()
         elif x[0] in command.all_command_dict and len(command.all_command_dict[x[0]]) == 1:
