@@ -1,8 +1,8 @@
 """
 
-the Split class is using for separate each elements in Script
+The 'Split' class is using for separate each element in Script
 
-Exemple:
+Example:
     > commit -m "fist commit"
     > [[commit, -m, "fist commit"]]
 

@@ -3,7 +3,7 @@
 the color.py file is used for display the color string on print function
 
 myString = colors_string('red', 'SyntaxError...')
-print(myString)
+print(myString) -> print with color red
 
 """
 

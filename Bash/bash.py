@@ -34,7 +34,10 @@ def run():
             for y, el1 in enumerate(x[1:]):
                 for el2 in command.all_command_dict[x[0]]['param']:
                     if el1 == el2:
-                        param[el1] = x[1:][y+1]
+                        try:
+                            param[el1] = x[1:][y+1]
+                        except IndexError:
+                            print(colors_string('red', 'SyntaxError: it missing the value'))
             if param:
                 param2 = {}
                 for y in param:

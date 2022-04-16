@@ -1,6 +1,6 @@
 """
 
-the command.py file is user to build the command whit decorator
+The command.py file is user to build the command whit decorator
 
 """
 
