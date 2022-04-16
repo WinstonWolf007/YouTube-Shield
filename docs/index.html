@@ -7,28 +7,45 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+	<!-- the coloring bar -->
 	<div class="bar">
 		<span id="front"></span>
 	</div>
 
+	<!-- The title page -->
 	<h1>Terminal Package doc</h1>
 
-	<!-- Stage 1 -->
+	<!-- Steps 1 -->
 	<h2>Structure file project</h2>
 
-	<div class="code">
-		/Project\n
-		\t/<span style="color: rgb(224, 26, 79);">Bash</span>\n
-		\t<span style="color: rgb(249, 194, 46);">/Script</span>
-	</div>
+<div class="code">
+/Project\n
+\t/<span style="color: rgb(224, 26, 79);">Bash</span>\n
+\t<span style="color: rgb(249, 194, 46);">/Script</span>
+</div>
 
-	<h2><strong><span style="color: rgb(224, 26, 79);">Bash</span></strong></h2>
+	<h2>
+		<span style="color: rgb(224, 26, 79);">
+			Bash
+		</span>
+	</h2>
+
 	<p>This is the package then you using for create command for command line. <strong>Not modified !!</strong></p>
 
-	<h2><strong><span style="color: rgb(249, 194, 46);">Script</span></strong></h2>
+	<h2>
+		<span style="color: rgb(249, 194, 46);">
+			Script
+		</span>
+	</h2>
+
 	<p>it here then you put the script for each command (the file name doesn't matter)</p>
 
-	<h2><strong><span style="color: rgb(53, 59, 60);">Example</span></strong></h2>
+	<h2>
+		<span style="color: rgb(53, 59, 60);">
+			Example
+		</span>
+	</h2>
+
 	<div class="code">
 		/project\n
 		\t/Bash\n
@@ -39,12 +56,17 @@
 	</div>
 
 
-	<!-- Stage 2 -->
+	<!-- Steps 2 -->
 	<h2>Edit a new command</h2>
 	<p>To edit command, walk a python file that can be found in '../Script'</p>
 	<p>For example, we go edit the 'command3.py' file</p>
 
-	<h2><span style="color: rgb(79, 134, 198);">code</span></h2>
+	<h2>
+		<span style="color: rgb(79, 134, 198);">
+			code
+		</span>
+	</h2>
+
 <div class="code">
 # Command3.py\n
 from Bash.command import Command\n
@@ -55,24 +77,44 @@ def mkdir(val):\n
     \tprint('create file:', val)
 </div>
 
-	<h2><span style="color: rgb(167, 226, 227);">#1 Import the Command class</span></h2>
+	<h2>
+		<span style="color: rgb(167, 226, 227);">
+			#1 Import the Command class
+		</span>
+	</h2>
+
 	<p>Use the keword 'import' and 'from' for import the Command class</p>
+
 <div class="code">
 from Bash.command import Command
 </div>
 
-	<h2><span style="color: rgb(167, 226, 227);">#2 Init new Command instance</span></h2>
+	<h2>
+		<span style="color: rgb(167, 226, 227);">
+			#2 Init new Command instance
+		</span>
+	</h2>
+
 	<p>Create variable who will keep the 'Command' class</p>
+
 <div class="code">
 command = Command()
 </div>
 
-	<h2><span style="color: rgb(167, 226, 227);">#3 Create a decorator 'command.add()'</span></h2>
+	<h2>
+		<span style="color: rgb(167, 226, 227);">
+			#3 Create a decorator 'command.add()'
+		</span>
+	</h2>
+
 	<p>Create decorator for say to the package it's a command</p>
+
 <div class="code">
 @command.add()
 </div>
+
 	<p>The different param are...</p>
+
 <div class="code">
 # one_only_value => just a value after keyword: mkdir <u>project1</u>\n\n
 @command.add(one_only_value=str)\n
@@ -101,32 +143,50 @@ def boot(value):\n
 \t\treturn 404
 </div>
 
-	<h2><span style="color: rgb(167, 226, 227);">#4 Create function who will keep the code</span></h2>
+	<h2>
+		<span style="color: rgb(167, 226, 227);">
+			#4 Create function who will keep the code
+		</span>
+	</h2>
+
 	<p>If i write 'mkdir MyFistProject', the package go to execute all code in fonction 'mkdir'</p>
+
 <div class="code">
 # the terminal\n\n
 > mkdir MyFistProject\n\n
 create file: MyFistProject
 </div>
 
-	<h2><span style="color: rgb(167, 226, 227);">#5 Insert code in function (the function name is the command name)</span></h2>
+	<h2>
+		<span style="color: rgb(167, 226, 227);">
+			#5 Insert code in function (the function name is the command name)
+		</span>
+	</h2>
+
 	<p>Warning ! the name of your function is the name of your command.</p>
 
 
-	<!-- Stage 3 -->
+	<!-- Steps 3 -->
 	<h2>Run your python script</h2>
+
 	<p>When you finish of your fonction, he will run a script</p>
+
 	<p>the script located in 'Bash' file</p>
-	<div class="code">
-		/Project\n
-		\t/Bash\n
-		\t\t/<span style="color: rgb(224, 26, 79);">main.py</span>\n
-		\t/Script
-	</div>
+
+<div class="code">
+/Project\n
+\t/Bash\n
+\t\t/<span style="color: rgb(224, 26, 79);">main.py</span>\n
+\t/Script
+</div>
+
 	<p>execute the 'main.py'  file for execute your command</p>
 
 	<!-- end; -->
-	<p style="color: rgb(159, 196, 144); margin-top: 100px;">@To write by WinstonWolf007</p>
+	<p style="color: rgb(159, 196, 144); margin-top: 100px;">
+		@To write by WinstonWolf007
+	</p>
+
 	<script type="text/javascript" src="script.js"></script>
 
 	
