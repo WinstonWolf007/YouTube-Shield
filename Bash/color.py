@@ -1,3 +1,13 @@
+"""
+
+the color.py file is used for display the color string on print function
+
+myString = colors_string('red', 'SyntaxError...')
+print(myString)
+
+"""
+
+# the all color code '\033'
 colors = {
     'red': '\033[91m',
     'green': '\033[92m',
@@ -7,6 +17,7 @@ colors = {
 }
 
 
+# pick the good element in colors dict and return this values
 def colors_string(color_name, *value):
     value = " ".join(value)
     try:

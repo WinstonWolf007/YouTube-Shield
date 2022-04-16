@@ -1,3 +1,10 @@
+"""
+
+the command.py file is user to build the command whit decorator
+
+"""
+
+# all the commands will to store here
 all_command_dict = {}
 
 
@@ -18,6 +25,7 @@ class Command:
             return wrapper()
         return inner
 
+    # developer zone: just a reminder
     def Doc(self):
         return {
             'param_dash': "add dash in keyword => 'rm -r project' if not activate => 'rm r project'",
