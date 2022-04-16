@@ -12,6 +12,7 @@ body {
 	max-height: 100vh;
 }
 
+/* default style of code-box */
 .code {
 	user-select: text;
 	color: #FF9680;
@@ -36,6 +37,7 @@ p {
 	font-size: 25px;
 }
 
+/* the coloring bar section */
 .bar {
 	position: fixed;
 	top: 0px;
