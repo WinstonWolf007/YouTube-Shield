@@ -28,3 +28,12 @@ def file(val):
 @command.add(only_one_param='v')
 def node():
     print('V17.9.0')
+
+
+years = 13
+
+def update():
+    global years
+    years += 1
+    msg = "you haves", years, 'old'
+    return msg
