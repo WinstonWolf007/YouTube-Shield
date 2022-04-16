@@ -55,19 +55,19 @@ def mkdir(val):\n
     \tprint('create file:', val)
 </div>
 
-	<h2><span style="color: rgb(167, 226, 227);">#1</span> Import the Command class</h2>
+	<h2><span style="color: rgb(167, 226, 227);">#1 Import the Command class</span></h2>
 	<p>Use the keword 'import' and 'from' for import the Command class</p>
 <div class="code">
 from Bash.command import Command
 </div>
 
-	<h2><span style="color: rgb(167, 226, 227);">#2</span> Init new Command instance</h2>
+	<h2><span style="color: rgb(167, 226, 227);">#2 Init new Command instance</span></h2>
 	<p>Create variable who will keep the 'Command' class</p>
 <div class="code">
 command = Command()
 </div>
 
-	<h2><span style="color: rgb(167, 226, 227);">#3</span> Create a decorator 'command.add()'</h2>
+	<h2><span style="color: rgb(167, 226, 227);">#3 Create a decorator 'command.add()'</span></h2>
 	<p>Create decorator for say to the package it's a command</p>
 <div class="code">
 @command.add()
@@ -101,7 +101,7 @@ def boot(value):\n
 \t\treturn 404
 </div>
 
-	<h2><span style="color: rgb(167, 226, 227);">#4</span> Create function who will keep the code</h2>
+	<h2><span style="color: rgb(167, 226, 227);">#4 Create function who will keep the code</span></h2>
 	<p>If i write 'mkdir MyFistProject', the package go to execute all code in fonction 'mkdir'</p>
 <div class="code">
 # the terminal\n\n
@@ -109,12 +109,26 @@ def boot(value):\n
 create file: MyFistProject
 </div>
 
-	<h2><span style="color: rgb(167, 226, 227);">#5</span> Insert code in function (the function name is the command name)</h2>
+	<h2><span style="color: rgb(167, 226, 227);">#5 Insert code in function (the function name is the command name)</span></h2>
 	<p>Warning ! the name of your function is the name of your command.</p>
 
 
+	<!-- Stage 3 -->
+	<h2>Run your python script</h2>
+	<p>When you finish of your fonction, he will run a script</p>
+	<p>the script located in 'Bash' file</p>
+	<div class="code">
+		/Project\n
+		\t/Bash\n
+		\t\t/<span style="color: rgb(224, 26, 79);">main.py</span>\n
+		\t/Script
+	</div>
+	<p>execute the 'main.py'  file for execute your command</p>
+
+	<!-- end; -->
 	<p style="color: rgb(159, 196, 144); margin-top: 100px;">@To write by WinstonWolf007</p>
 	<script type="text/javascript" src="script.js"></script>
 
+	
 </body>
 </html>
